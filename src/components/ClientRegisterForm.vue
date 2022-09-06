@@ -50,7 +50,7 @@ export default {
   methods: {
     // Requisição POST para criar um novo cliente
     async createClient() {
-      await fetch('http://backendcrud.netlify.app/api/clients/', {
+      await fetch('https://vuejs-crud.herokuapp.com/api/clients/', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
