@@ -50,7 +50,7 @@ export default {
   methods: {
     // Requisição PUT para atualizar informações do usuário
     async updateClient(id) {
-      await fetch(`http://backendcrud.netlify.app/api/clients/edit/${id}`, {
+      await fetch(`https://vuejs-crud.herokuapp.com/api/clients/edit/${id}`, {
         method: 'PUT',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({ 
